@@ -1,20 +1,4 @@
-2023-10-02 10:26:02 | INFO    | __main__:from_epic:40 | run - {'stage': 'Initialization EpicPlayer'}
-2023-10-02 10:26:07 | DEBUG    | hcaptcha_challenger.onnx.modelhub:request_resource:46 | Downloading resource - {'url': 'https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml', 'to': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/objects.yaml'}
-2023-10-02 10:26:07 | INFO    | hcaptcha_challenger.onnx.modelhub:flush_runtime_assets:137 | Reloading the local cache of Assets - {'assets_dir': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/_assets'}
-2023-10-02 10:26:07 | DEBUG    | hcaptcha_challenger.onnx.modelhub:flush_runtime_assets:151 | Pulling Assets index file - {'url': 'https://api.github.com/repos/QIN2DIM/hcaptcha-challenger/releases'}
-2023-10-02 10:26:07 | INFO    | __main__:claim_epic_games:86 | Try to flush cookie - {'task': 'claim_epic_games'}
-2023-10-02 10:26:11 | INFO    | services.agents.epic_games:_login:94 | login - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-10-02 10:26:11 | INFO    | services.agents.epic_games:_login:96 | login-with-epic - {'url': 'https://www.epicgames.com/id/login/epic?lang=en-US&redirect_uri=https%3A%2F%2Fstore.epicgames.com%2Fen-US%2Ffree-games'}
-2023-10-02 10:26:16 | DEBUG    | services.agents.epic_games:_login:108 | claim_weekly_games - {'action': 'handle challenge'}
-2023-10-02 10:26:16 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:334 | match model - {'resnet': 'plant2318.onnx', 'prompt': 'Please click each image containing a рlаnt'}
-2023-10-02 10:26:16 | DEBUG    | hcaptcha_challenger.onnx.modelhub:request_resource:46 | Downloading resource - {'url': 'https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/plant2318.onnx', 'to': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/plant2318.onnx'}
-2023-10-02 10:26:23 | DEBUG    | services.agents.epic_games:_login:111 | handle challenge - {'result': 'success'}
-2023-10-02 10:26:28 | SUCCESS    | services.agents.epic_games:_login:129 | login - {'result': 'token has not expired'}
-2023-10-02 10:26:38 | SUCCESS    | services.agents.epic_games:flush_token:150 | flush_token - {'path': PosixPath('/home/runner/work/myEpic/myEpic/epic/user_data_dir/epic-games@yiyindaren/ctx_cookie.json')}
-2023-10-02 10:26:39 | DEBUG    | __main__:create_tasks:55 | Put task - {'title': 'Model Builder', 'url': 'https://store.epicgames.com/en-US/p/model-builder-f9b456'}
-2023-10-02 10:26:39 | DEBUG    | __main__:create_tasks:55 | Put task - {'title': 'Soulstice', 'url': 'https://store.epicgames.com/en-US/p/soulstice'}
-2023-10-02 10:26:39 | INFO    | services.agents.epic_games:claim_weekly_games:164 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/model-builder-f9b456'}
-2023-10-02 10:26:49 | INFO    | services.agents.epic_games:claim_weekly_games:199 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-10-02 10:26:51 | INFO    | services.agents.epic_games:claim_weekly_games:206 | claim_weekly_games - {'action': 'click payment button'}
-2023-10-02 10:27:22 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:334 | match model - {'resnet': 'plant2318.onnx', 'prompt': 'Please click each image containing a рlant'}
-2023-10-02 10:27:33 | SUCCESS    | services.agents.epic_games:claim_weekly_games:230 | claim_weekly_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/cart/success'}
+2023-10-03 07:22:25 | INFO    | __main__:from_epic:40 | run - {'stage': 'Initialization EpicPlayer'}
+2023-10-03 07:22:36 | DEBUG    | __main__:create_tasks:55 | Put task - {'title': 'Model Builder', 'url': 'https://store.epicgames.com/en-US/p/model-builder-f9b456'}
+2023-10-03 07:22:36 | DEBUG    | __main__:create_tasks:55 | Put task - {'title': 'Soulstice', 'url': 'https://store.epicgames.com/en-US/p/soulstice'}
+2023-10-03 07:22:36 | SUCCESS    | __main__:prelude_with_context:74 | Pass claim task - {'reason': 'All free games are in my library', 'stage': 'context-prelude'}
