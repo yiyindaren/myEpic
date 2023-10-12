@@ -1,0 +1,25 @@
+2023-10-13 07:23:19 | ERROR    | __main__:run:126 | An error has been caught in function 'run', process 'MainProcess' (3754), thread 'MainThread' (140085177846848): - {}
+Traceback (most recent call last):
+  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 130, in <module>
+    asyncio.run(run())
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+> File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 126, in run
+    await agent.stash()
+  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 118, in stash
+    if not await self.prelude_with_context(context):
+  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 71, in prelude_with_context
+    self.create_tasks()
+  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 53, in create_tasks
+    self._pros = get_promotions()
+  File "/home/runner/work/myEpic/myEpic/epic/src/services/agents/epic_games.py", line 261, in get_promotions
+    query = promotion["catalogNs"]["mappings"][0]["pageSlug"]
+TypeError: 'NoneType' object is not subscriptable
