@@ -1,6 +1,6 @@
-2023-10-13 07:23:19 | ERROR    | __main__:run:126 | An error has been caught in function 'run', process 'MainProcess' (3754), thread 'MainThread' (140085177846848): - {}
+2023-10-14 07:24:31 | ERROR    | __main__:run:138 | An error has been caught in function 'run', process 'MainProcess' (3761), thread 'MainThread' (139870932319104): - {}
 Traceback (most recent call last):
-  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 130, in <module>
+  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 142, in <module>
     asyncio.run(run())
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/runners.py", line 44, in run
     return loop.run_until_complete(main)
@@ -12,14 +12,37 @@ Traceback (most recent call last):
     handle._run()
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/events.py", line 80, in _run
     self._context.run(self._callback, *self._args)
-> File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 126, in run
+> File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 138, in run
     await agent.stash()
-  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 118, in stash
-    if not await self.prelude_with_context(context):
-  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 71, in prelude_with_context
-    self.create_tasks()
-  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 53, in create_tasks
-    self._pros = get_promotions()
-  File "/home/runner/work/myEpic/myEpic/epic/src/services/agents/epic_games.py", line 261, in get_promotions
-    query = promotion["catalogNs"]["mappings"][0]["pageSlug"]
-TypeError: 'NoneType' object is not subscriptable
+  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 131, in stash
+    await self.claim_epic_games(context)
+  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 110, in claim_epic_games
+    await epic.claim_weekly_games(page, single_promotions)
+  File "/home/runner/work/myEpic/myEpic/epic/src/services/agents/epic_games.py", line 254, in claim_weekly_games
+    await self.handle.insert_challenge(self._solver, page, wpc, payment_btn, recur_url, is_uk)
+  File "/home/runner/work/myEpic/myEpic/epic/src/services/agents/epic_games.py", line 102, in insert_challenge
+    match await solver(window="free", recur_url=recur_url):
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/agents/playwright/control.py", line 579, in __call__
+    return await self.execute(**kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/agents/playwright/control.py", line 640, in execute
+    await self._binary_nested_challenge(frame_challenge)
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/agents/playwright/control.py", line 563, in _binary_nested_challenge
+    await self._binary_challenge(frame_challenge, classifier)
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/agents/playwright/control.py", line 534, in _binary_challenge
+    await sample.wait_for()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 18116, in wait_for
+    await self._impl_obj.wait_for(timeout=timeout, state=state)
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_locator.py", line 670, in wait_for
+    await self._frame.wait_for_selector(
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 316, in wait_for_selector
+    await self._channel.send("waitForSelector", locals_to_params(locals()))
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 482, in wrap_api_call
+    return await cb()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 97, in inner_send
+    result = next(iter(done)).result()
+playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for frame_locator("xpath=//div[@id='webPurchaseContainer']//iframe").frame_locator("xpath=//iframe[contains(@title, 'hCaptcha challenge')]").locator("xpath=//div[@class='task-image']").nth(6) to be visible
+============================================================
