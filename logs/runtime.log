@@ -1,8 +1,13 @@
-2023-10-15 07:21:45 | INFO    | __main__:stash:119 | run - {'role': 'EpicPlayer', 'headless': True}
-2023-10-15 07:21:55 | DEBUG    | __main__:create_tasks:54 | Put task - {'title': 'Blazing Sails', 'url': 'https://store.epicgames.com/en-US/p/blazing-sails'}
-2023-10-15 07:21:55 | DEBUG    | __main__:create_tasks:54 | Put task - {'title': 'Q.U.B.E. ULTIMATE BUNDLE', 'url': 'https://store.epicgames.com/en-US/bundles/qube-ultimate-bundle'}
-2023-10-15 07:21:56 | INFO    | services.agents.epic_games:claim_weekly_games:214 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/blazing-sails'}
-2023-10-15 07:22:08 | INFO    | services.agents.epic_games:claim_weekly_games:245 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-10-15 07:22:11 | INFO    | services.agents.epic_games:claim_weekly_games:247 | claim_weekly_games - {'action': 'click payment button'}
-2023-10-15 07:22:31 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:394 | rank model - {'resnet': 'nested_largest_rabbit2310.onnx', 'prompt': 'Please click on the largest аnіmal.'}
-2023-10-15 07:22:39 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:394 | rank model - {'resnet': 'nested_largest_rabbit2310.onnx', 'prompt': 'Please click on the largest аnіmаl.'}
+2023-10-16 07:22:22 | INFO    | __main__:stash:119 | run - {'role': 'EpicPlayer', 'headless': True}
+2023-10-16 07:22:31 | DEBUG    | __main__:create_tasks:54 | Put task - {'title': 'Blazing Sails', 'url': 'https://store.epicgames.com/en-US/p/blazing-sails'}
+2023-10-16 07:22:31 | DEBUG    | __main__:create_tasks:54 | Put task - {'title': 'Q.U.B.E. ULTIMATE BUNDLE', 'url': 'https://store.epicgames.com/en-US/bundles/qube-ultimate-bundle'}
+2023-10-16 07:22:32 | INFO    | services.agents.epic_games:claim_weekly_games:214 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/blazing-sails'}
+2023-10-16 07:22:41 | INFO    | services.agents.epic_games:claim_weekly_games:245 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-10-16 07:22:44 | INFO    | services.agents.epic_games:claim_weekly_games:247 | claim_weekly_games - {'action': 'click payment button'}
+2023-10-16 07:22:50 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:373 | match model - {'resnet': 'boat2310.onnx', 'prompt': 'Please click each image containing a bοat'}
+2023-10-16 07:23:02 | SUCCESS    | services.agents.epic_games:claim_weekly_games:258 | claim_weekly_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/cart/success'}
+2023-10-16 07:23:02 | INFO    | services.agents.epic_games:claim_bundle_games:262 | claim_bundle_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/bundles/qube-ultimate-bundle'}
+2023-10-16 07:23:12 | INFO    | services.agents.epic_games:claim_bundle_games:283 | claim_bundle_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-10-16 07:23:14 | INFO    | services.agents.epic_games:claim_bundle_games:285 | claim_bundle_games - {'action': 'click payment button'}
+2023-10-16 07:23:22 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:399 | rank model - {'resnet': 'nested_largest_hedgehog2309.onnx', 'prompt': 'Please click on the largest аnimal.'}
+2023-10-16 07:23:31 | SUCCESS    | services.agents.epic_games:claim_bundle_games:298 | claim_bundle_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/download?ns=0712c5eca64b47bbbced82cabba9f0d7&id=f18f14a76a874aa883a651fcc8c513d0'}
