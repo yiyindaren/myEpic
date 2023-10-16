@@ -1,13 +1,41 @@
-2023-10-16 07:22:22 | INFO    | __main__:stash:119 | run - {'role': 'EpicPlayer', 'headless': True}
-2023-10-16 07:22:31 | DEBUG    | __main__:create_tasks:54 | Put task - {'title': 'Blazing Sails', 'url': 'https://store.epicgames.com/en-US/p/blazing-sails'}
-2023-10-16 07:22:31 | DEBUG    | __main__:create_tasks:54 | Put task - {'title': 'Q.U.B.E. ULTIMATE BUNDLE', 'url': 'https://store.epicgames.com/en-US/bundles/qube-ultimate-bundle'}
-2023-10-16 07:22:32 | INFO    | services.agents.epic_games:claim_weekly_games:214 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/blazing-sails'}
-2023-10-16 07:22:41 | INFO    | services.agents.epic_games:claim_weekly_games:245 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-10-16 07:22:44 | INFO    | services.agents.epic_games:claim_weekly_games:247 | claim_weekly_games - {'action': 'click payment button'}
-2023-10-16 07:22:50 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:373 | match model - {'resnet': 'boat2310.onnx', 'prompt': 'Please click each image containing a bοat'}
-2023-10-16 07:23:02 | SUCCESS    | services.agents.epic_games:claim_weekly_games:258 | claim_weekly_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/cart/success'}
-2023-10-16 07:23:02 | INFO    | services.agents.epic_games:claim_bundle_games:262 | claim_bundle_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/bundles/qube-ultimate-bundle'}
-2023-10-16 07:23:12 | INFO    | services.agents.epic_games:claim_bundle_games:283 | claim_bundle_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-10-16 07:23:14 | INFO    | services.agents.epic_games:claim_bundle_games:285 | claim_bundle_games - {'action': 'click payment button'}
-2023-10-16 07:23:22 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:399 | rank model - {'resnet': 'nested_largest_hedgehog2309.onnx', 'prompt': 'Please click on the largest аnimal.'}
-2023-10-16 07:23:31 | SUCCESS    | services.agents.epic_games:claim_bundle_games:298 | claim_bundle_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/download?ns=0712c5eca64b47bbbced82cabba9f0d7&id=f18f14a76a874aa883a651fcc8c513d0'}
+2023-10-17 07:22:39 | INFO    | __main__:stash:119 | run - {'role': 'EpicPlayer', 'headless': True}
+2023-10-17 07:22:45 | INFO    | __main__:claim_epic_games:85 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-10-17 07:22:45 | SUCCESS    | services.agents.epic_games:_login:185 | login - {'result': 'token has not expired'}
+2023-10-17 07:22:54 | SUCCESS    | services.agents.epic_games:flush_token:206 | flush_token - {'path': PosixPath('/home/runner/work/myEpic/myEpic/epic/user_data_dir/epic-games@yiyindaren/ctx_cookie.json')}
+2023-10-17 07:22:55 | WARNING    | services.agents.epic_games:get_order_history:371 | Failed to get order history, cookie may have expired - {}
+2023-10-17 07:22:55 | DEBUG    | __main__:create_tasks:54 | Put task - {'title': 'Blazing Sails', 'url': 'https://store.epicgames.com/en-US/p/blazing-sails'}
+2023-10-17 07:22:55 | DEBUG    | __main__:create_tasks:54 | Put task - {'title': 'Q.U.B.E. ULTIMATE BUNDLE', 'url': 'https://store.epicgames.com/en-US/bundles/qube-ultimate-bundle'}
+2023-10-17 07:22:55 | INFO    | services.agents.epic_games:claim_weekly_games:214 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/blazing-sails'}
+2023-10-17 07:23:05 | ERROR    | __main__:run:138 | An error has been caught in function 'run', process 'MainProcess' (3665), thread 'MainThread' (140358289783872): - {}
+Traceback (most recent call last):
+  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 142, in <module>
+    asyncio.run(run())
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+> File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 138, in run
+    await agent.stash()
+  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 131, in stash
+    await self.claim_epic_games(context)
+  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 110, in claim_epic_games
+    await epic.claim_weekly_games(page, single_promotions)
+  File "/home/runner/work/myEpic/myEpic/epic/src/services/agents/epic_games.py", line 230, in claim_weekly_games
+    await expect(cta_btn).to_have_text("View In Cart")
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 20041, in to_have_text
+    await self._impl_obj.to_have_text(
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_assertions.py", line 455, in to_have_text
+    await self._expect_impl(
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_assertions.py", line 70, in _expect_impl
+    raise AssertionError(f"{out_message}\nActual value: {actual} {log}")
+AssertionError: Locator expected to have text 'View In Cart'
+Actual value: None 
+Call log:
+LocatorAssertions.to_have_text with timeout 5000ms
+waiting for locator("xpath=//aside//button[@data-testid='add-to-cart-cta-button']")
