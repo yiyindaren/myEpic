@@ -1,14 +1,17 @@
-2023-10-17 07:22:39 | INFO    | __main__:stash:119 | run - {'role': 'EpicPlayer', 'headless': True}
-2023-10-17 07:22:45 | INFO    | __main__:claim_epic_games:85 | Try to flush cookie - {'task': 'claim_epic_games'}
-2023-10-17 07:22:45 | SUCCESS    | services.agents.epic_games:_login:185 | login - {'result': 'token has not expired'}
-2023-10-17 07:22:54 | SUCCESS    | services.agents.epic_games:flush_token:206 | flush_token - {'path': PosixPath('/home/runner/work/myEpic/myEpic/epic/user_data_dir/epic-games@yiyindaren/ctx_cookie.json')}
-2023-10-17 07:22:55 | WARNING    | services.agents.epic_games:get_order_history:371 | Failed to get order history, cookie may have expired - {}
-2023-10-17 07:22:55 | DEBUG    | __main__:create_tasks:54 | Put task - {'title': 'Blazing Sails', 'url': 'https://store.epicgames.com/en-US/p/blazing-sails'}
-2023-10-17 07:22:55 | DEBUG    | __main__:create_tasks:54 | Put task - {'title': 'Q.U.B.E. ULTIMATE BUNDLE', 'url': 'https://store.epicgames.com/en-US/bundles/qube-ultimate-bundle'}
-2023-10-17 07:22:55 | INFO    | services.agents.epic_games:claim_weekly_games:214 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/blazing-sails'}
-2023-10-17 07:23:05 | ERROR    | __main__:run:138 | An error has been caught in function 'run', process 'MainProcess' (3665), thread 'MainThread' (140358289783872): - {}
+2023-10-18 07:23:19 | INFO    | __main__:stash:125 | run - {'role': 'EpicPlayer', 'headless': True}
+2023-10-18 07:23:25 | INFO    | __main__:claim_epic_games:91 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-10-18 07:23:26 | SUCCESS    | epic_games.agent:_login:203 | login - {'result': 'Successfully refreshed tokens'}
+2023-10-18 07:23:37 | SUCCESS    | epic_games.agent:flush_token:224 | flush_token - {'path': PosixPath('/home/runner/work/myEpic/myEpic/epic/user_data_dir/epic-games@yiyindaren/ctx_cookie.json')}
+2023-10-18 07:23:38 | WARNING    | epic_games.agent:get_order_history:389 | Failed to get order history, cookie may have expired - {}
+2023-10-18 07:23:38 | DEBUG    | __main__:create_tasks:60 | Put task - {'title': 'Blazing Sails', 'url': 'https://store.epicgames.com/en-US/p/blazing-sails'}
+2023-10-18 07:23:38 | DEBUG    | __main__:create_tasks:60 | Put task - {'title': 'Q.U.B.E. ULTIMATE BUNDLE', 'url': 'https://store.epicgames.com/en-US/bundles/qube-ultimate-bundle'}
+2023-10-18 07:23:38 | INFO    | epic_games.agent:claim_weekly_games:232 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/blazing-sails'}
+2023-10-18 07:24:15 | SUCCESS    | epic_games.agent:claim_weekly_games:252 | Pass claim task - {'reason': 'Free games not added to shopping cart'}
+2023-10-18 07:24:15 | INFO    | epic_games.agent:claim_bundle_games:280 | claim_bundle_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/bundles/qube-ultimate-bundle'}
+2023-10-18 07:24:25 | INFO    | epic_games.agent:claim_bundle_games:301 | claim_bundle_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-10-18 07:25:03 | ERROR    | __main__:run:144 | An error has been caught in function 'run', process 'MainProcess' (3625), thread 'MainThread' (140215094356864): - {}
 Traceback (most recent call last):
-  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 142, in <module>
+  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 148, in <module>
     asyncio.run(run())
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/runners.py", line 44, in run
     return loop.run_until_complete(main)
@@ -20,22 +23,29 @@ Traceback (most recent call last):
     handle._run()
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/events.py", line 80, in _run
     self._context.run(self._callback, *self._args)
-> File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 138, in run
+> File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 144, in run
     await agent.stash()
-  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 131, in stash
+  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 137, in stash
     await self.claim_epic_games(context)
-  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 110, in claim_epic_games
-    await epic.claim_weekly_games(page, single_promotions)
-  File "/home/runner/work/myEpic/myEpic/epic/src/services/agents/epic_games.py", line 230, in claim_weekly_games
-    await expect(cta_btn).to_have_text("View In Cart")
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 20041, in to_have_text
-    await self._impl_obj.to_have_text(
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_assertions.py", line 455, in to_have_text
-    await self._expect_impl(
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_assertions.py", line 70, in _expect_impl
-    raise AssertionError(f"{out_message}\nActual value: {actual} {log}")
-AssertionError: Locator expected to have text 'View In Cart'
-Actual value: None 
-Call log:
-LocatorAssertions.to_have_text with timeout 5000ms
-waiting for locator("xpath=//aside//button[@data-testid='add-to-cart-cta-button']")
+  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 118, in claim_epic_games
+    await epic.claim_bundle_games(page, bundle_promotions)
+  File "/home/runner/work/myEpic/myEpic/epic/src/epic_games/agent.py", line 302, in claim_bundle_games
+    wpc, payment_btn = await self.handle.move_to_purchase_container(page)
+  File "/home/runner/work/myEpic/myEpic/epic/src/epic_games/agent.py", line 75, in move_to_purchase_container
+    await payment_btn.click()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 15673, in click
+    await self._impl_obj.click(
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_locator.py", line 159, in click
+    return await self._frame.click(self._selector, strict=True, **params)
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 483, in click
+    await self._channel.send("click", locals_to_params(locals()))
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 490, in wrap_api_call
+    return await cb()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 99, in inner_send
+    result = next(iter(done)).result()
+playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for frame_locator("xpath=//iframe[@class='']").locator("xpath=//div[@class='payment-order-confirm']")
+============================================================
