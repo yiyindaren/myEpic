@@ -1,9 +1,23 @@
-2023-10-19 07:22:55 | INFO    | __main__:stash:125 | run - {'role': 'EpicPlayer', 'headless': True}
-2023-10-19 07:23:03 | INFO    | __main__:claim_epic_games:91 | Try to flush cookie - {'task': 'claim_epic_games'}
-2023-10-19 07:23:06 | INFO    | epic_games.agent:_login:187 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-10-19 07:23:11 | DEBUG    | epic_games.agent:insert_challenge:165 | Attack challenge - {'stage': 'email_exists_prod'}
-2023-10-19 07:23:12 | DEBUG    | epic_games.agent:insert_challenge:168 | Parse result - {'stage': 'email_exists_prod', 'result': 'backcall'}
-2023-10-19 07:23:43 | ERROR    | __main__:run:144 | An error has been caught in function 'run', process 'MainProcess' (3544), thread 'MainThread' (140206948445248): - {}
+2023-10-20 02:00:05 | INFO    | __main__:stash:125 | run - {'role': 'EpicPlayer', 'headless': True}
+2023-10-20 02:00:11 | INFO    | __main__:claim_epic_games:91 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-10-20 02:00:15 | INFO    | epic_games.agent:_login:187 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-10-20 02:00:20 | DEBUG    | epic_games.agent:insert_challenge:165 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-10-20 02:00:20 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:377 | match model - {'resnet': 'main_course2311.onnx', 'prompt': 'Please click each image containing a main course'}
+2023-10-20 02:00:26 | DEBUG    | epic_games.agent:insert_challenge:168 | Parse result - {'stage': 'email_exists_prod', 'result': 'success'}
+2023-10-20 02:00:32 | DEBUG    | epic_games.agent:insert_challenge:159 | Attack challenge - {'stage': 'login_prod'}
+2023-10-20 02:00:32 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:377 | match model - {'resnet': 'main_course2311.onnx', 'prompt': 'Please click each image containing a main cοursе'}
+2023-10-20 02:00:36 | DEBUG    | epic_games.agent:insert_challenge:168 | Parse result - {'stage': 'login_prod', 'result': 'success'}
+2023-10-20 02:00:42 | SUCCESS    | epic_games.agent:_login:203 | login - {'result': 'Successfully refreshed tokens'}
+2023-10-20 02:00:51 | SUCCESS    | epic_games.agent:flush_token:224 | flush_token - {'path': PosixPath('/home/runner/work/myEpic/myEpic/epic/user_data_dir/epic-games@yiyindaren/ctx_cookie.json')}
+2023-10-20 02:00:53 | DEBUG    | __main__:create_tasks:60 | Put task - {'title': 'The Evil Within', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within'}
+2023-10-20 02:00:53 | DEBUG    | __main__:create_tasks:60 | Put task - {'title': 'Eternal Threads', 'url': 'https://store.epicgames.com/en-US/p/eternal-threads-197169'}
+2023-10-20 02:00:53 | INFO    | epic_games.agent:claim_weekly_games:232 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within'}
+2023-10-20 02:00:57 | INFO    | epic_games.agent:claim_weekly_games:232 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/eternal-threads-197169'}
+2023-10-20 02:01:08 | INFO    | epic_games.agent:claim_weekly_games:263 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-10-20 02:01:11 | INFO    | epic_games.agent:claim_weekly_games:265 | claim_weekly_games - {'action': 'click payment button'}
+2023-10-20 02:01:19 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:368 | match model - {'yolo': 'head_of_the_animal_2310_yolov8s.onnx', 'prompt': 'Please click on the head of the аnimаl'}
+2023-10-20 02:01:35 | DEBUG    | hcaptcha_challenger.agents.playwright.control:lookup_unique_object:474 | select model - {'yolo': 'appears_only_once_2309_yolov8s-seg.onnx', 'trident': 'find_unique_object', 'ash': 'please click on the object that appears only once default'}
+2023-10-20 02:02:06 | ERROR    | __main__:run:144 | An error has been caught in function 'run', process 'MainProcess' (3579), thread 'MainThread' (140429102754880): - {}
 Traceback (most recent call last):
   File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 148, in <module>
     asyncio.run(run())
@@ -21,18 +35,22 @@ Traceback (most recent call last):
     await agent.stash()
   File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 137, in stash
     await self.claim_epic_games(context)
-  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 92, in claim_epic_games
-    if await epic.authorize(page):
-  File "/home/runner/work/myEpic/myEpic/epic/src/epic_games/agent.py", line 208, in authorize
-    match await self._login(page):
-  File "/home/runner/work/myEpic/myEpic/epic/src/epic_games/agent.py", line 194, in _login
-    await insert_challenge(stage="email_exists_prod")
-  File "/home/runner/work/myEpic/myEpic/epic/src/epic_games/agent.py", line 173, in insert_challenge
-    await page.click("#sign-in", delay=200)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 10101, in click
+  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 116, in claim_epic_games
+    await epic.claim_weekly_games(page, single_promotions)
+  File "/home/runner/work/myEpic/myEpic/epic/src/epic_games/agent.py", line 272, in claim_weekly_games
+    await self.handle.insert_challenge(self._solver, page, wpc, payment_btn, recur_url, is_uk)
+  File "/home/runner/work/myEpic/myEpic/epic/src/epic_games/agent.py", line 101, in insert_challenge
+    match await solver(window="free", recur_url=recur_url):
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/agents/playwright/control.py", line 612, in __call__
+    return await self.execute(**kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/agents/playwright/control.py", line 688, in execute
+    await self._keypoint_default_challenge(frame_challenge)
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/agents/playwright/control.py", line 510, in _keypoint_default_challenge
+    await locator.click(delay=500, position=position)
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 15673, in click
     await self._impl_obj.click(
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_page.py", line 691, in click
-    return await self._main_frame.click(**locals_to_params(locals()))
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_locator.py", line 159, in click
+    return await self._frame.click(self._selector, strict=True, **params)
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 483, in click
     await self._channel.send("click", locals_to_params(locals()))
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 61, in send
@@ -43,5 +61,5 @@ Traceback (most recent call last):
     result = next(iter(done)).result()
 playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.
 =========================== logs ===========================
-waiting for locator("#sign-in")
+waiting for frame_locator("xpath=//div[@id='webPurchaseContainer']//iframe").frame_locator("xpath=//iframe[contains(@title, 'hCaptcha challenge')]").locator("xpath=//div[@class='challenge-view']//canvas")
 ============================================================
