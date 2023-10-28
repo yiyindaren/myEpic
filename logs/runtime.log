@@ -1,8 +1,10 @@
-2023-10-28 06:27:37 | INFO    | __main__:stash:129 | run - {'image': '20231026', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
-2023-10-28 06:27:48 | DEBUG    | __main__:create_tasks:64 | Put task - {'title': 'The Evil Within 2', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within-2'}
-2023-10-28 06:27:52 | INFO    | epic_games.agent:claim_weekly_games:232 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within-2'}
-2023-10-28 06:28:01 | INFO    | epic_games.agent:claim_weekly_games:263 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-10-28 06:28:04 | INFO    | epic_games.agent:claim_weekly_games:265 | claim_weekly_games - {'action': 'click payment button'}
-2023-10-28 06:28:11 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_binary_challenge_clip:635 | unsupervised - {'type': 'binary', 'candidate_labels': ['This is a photo of the bicycle.', 'This is a photo that has nothing to do with bicycle.'], 'prompt': 'Please click each image containing a bіcуclе', 'timit': '1.732s'}
-2023-10-28 06:28:29 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_binary_challenge_clip:635 | unsupervised - {'type': 'binary', 'candidate_labels': ['This is a photo of the bicycle.', 'This is a photo that has nothing to do with bicycle.'], 'prompt': 'Please click each image containing a bicуclе', 'timit': '1.506s'}
-2023-10-28 06:28:46 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_binary_challenge_clip:635 | unsupervised - {'type': 'binary', 'candidate_labels': ['This is a photo of the the largest animal.', 'This is a photo that has nothing to do with the largest animal.'], 'prompt': 'Please click on each image containing the largest animаl.', 'timit': '1.830s'}
+2023-10-29 06:28:26 | INFO    | __main__:stash:140 | run - {'image': '20231029', 'version': '0.9.2.post3', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
+2023-10-29 06:28:41 | INFO    | __main__:claim_epic_games:96 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-10-29 06:28:44 | SUCCESS    | epic_games.agent:_login:202 | login - {'result': 'Successfully refreshed tokens'}
+2023-10-29 06:29:03 | SUCCESS    | epic_games.agent:flush_token:229 | flush_token - {'path': PosixPath('/home/runner/work/myEpic/myEpic/epic/user_data_dir/epic-games@yiyindaren/ctx_cookie.json')}
+2023-10-29 06:29:04 | DEBUG    | __main__:create_tasks:65 | Put task - {'title': 'The Evil Within 2', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within-2'}
+2023-10-29 06:29:04 | INFO    | epic_games.agent:claim_weekly_games:237 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within-2'}
+2023-10-29 06:29:14 | INFO    | epic_games.agent:claim_weekly_games:268 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-10-29 06:29:18 | INFO    | epic_games.agent:claim_weekly_games:270 | claim_weekly_games - {'action': 'click payment button'}
+2023-10-29 06:29:23 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:387 | match model - {'resnet': 'bicycle2309.onnx', 'prompt': 'Please click each image containing a bicуclе'}
+2023-10-29 06:29:33 | SUCCESS    | epic_games.agent:claim_weekly_games:281 | claim_weekly_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/cart/success'}
