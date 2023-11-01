@@ -1,37 +1,7 @@
-2023-11-01 06:28:43 | INFO    | __main__:stash:140 | run - {'image': '20231029', 'version': '0.9.2.post3', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
-2023-11-01 06:29:17 | ERROR    | __main__:run:167 | An error has been caught in function 'run', process 'MainProcess' (3557), thread 'MainThread' (139766674848832): - {}
-Traceback (most recent call last):
-  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 171, in <module>
-    asyncio.run(run())
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
-    self.run_forever()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
-    self._run_once()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
-    handle._run()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-> File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 167, in run
-    await agent.stash()
-  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 158, in stash
-    if not await self.prelude_with_context(context):
-  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 72, in prelude_with_context
-    await page.goto(url, wait_until="networkidle")
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 9251, in goto
-    await self._impl_obj.goto(
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_page.py", line 473, in goto
-    return await self._main_frame.goto(**locals_to_params(locals()))
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 138, in goto
-    await self._channel.send("goto", locals_to_params(locals()))
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 61, in send
-    return await self._connection.wrap_api_call(
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 490, in wrap_api_call
-    return await cb()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 99, in inner_send
-    result = next(iter(done)).result()
-playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-navigating to "https://www.epicgames.com/account/creator-programs", waiting until "networkidle"
-============================================================
+2023-11-02 06:28:55 | INFO    | __main__:stash:140 | run - {'image': '20231029', 'version': '0.9.2.post3', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
+2023-11-02 06:29:02 | INFO    | __main__:claim_epic_games:96 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-11-02 06:29:04 | SUCCESS    | epic_games.agent:_login:202 | login - {'result': 'Successfully refreshed tokens'}
+2023-11-02 06:29:12 | SUCCESS    | epic_games.agent:flush_token:229 | flush_token - {'path': PosixPath('/home/runner/work/myEpic/myEpic/epic/user_data_dir/epic-games@yiyindaren/ctx_cookie.json')}
+2023-11-02 06:29:13 | DEBUG    | __main__:create_tasks:65 | Put task - {'title': 'Tandem: A Tale of Shadows', 'url': 'https://store.epicgames.com/en-US/p/tandem-a-tale-of-shadows-c3f55e'}
+2023-11-02 06:29:13 | DEBUG    | __main__:create_tasks:65 | Put task - {'title': 'The Evil Within 2', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within-2'}
+2023-11-02 06:29:13 | SUCCESS    | __main__:claim_epic_games:107 | Pass claim task - {'reason': 'All free games are in my library', 'stage': 'claim-games'}
