@@ -1,7 +1,3 @@
-2023-11-10 06:29:54 | INFO    | __main__:stash:140 | run - {'image': '20231105', 'version': '0.9.5', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
-2023-11-10 06:30:03 | DEBUG    | __main__:create_tasks:65 | Put task - {'title': 'Golden Light', 'url': 'https://store.epicgames.com/en-US/p/golden-light-f543b3'}
-2023-11-10 06:30:08 | INFO    | epic_games.agent:claim_weekly_games:237 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/golden-light-f543b3'}
-2023-11-10 06:30:20 | INFO    | epic_games.agent:claim_weekly_games:268 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-11-10 06:30:23 | INFO    | epic_games.agent:claim_weekly_games:270 | claim_weekly_games - {'action': 'click payment button'}
-2023-11-10 06:30:29 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:394 | match model - {'resnet': 'land_vehicle2309.onnx', 'prompt': 'Please click each image containing a land vеhiсlе'}
-2023-11-10 06:30:39 | SUCCESS    | epic_games.agent:claim_weekly_games:281 | claim_weekly_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/cart/success'}
+2023-11-11 06:29:35 | INFO    | __main__:stash:140 | run - {'image': '20231105', 'version': '0.9.5', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
+2023-11-11 06:29:43 | DEBUG    | __main__:create_tasks:65 | Put task - {'title': 'Golden Light', 'url': 'https://store.epicgames.com/en-US/p/golden-light-f543b3'}
+2023-11-11 06:29:43 | SUCCESS    | __main__:prelude_with_context:84 | Pass claim task - {'reason': 'All free games are in my library', 'stage': 'context-prelude'}
