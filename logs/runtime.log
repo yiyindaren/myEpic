@@ -1,9 +1,4 @@
-2023-11-17 06:30:17 | INFO    | __main__:stash:140 | run - {'image': '20231105', 'version': '0.9.5.post1', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
-2023-11-17 06:30:23 | DEBUG    | __main__:create_tasks:65 | Put task - {'title': 'Surviving the Aftermath', 'url': 'https://store.epicgames.com/en-US/p/surviving-the-aftermath'}
-2023-11-17 06:30:23 | DEBUG    | __main__:create_tasks:65 | Put task - {'title': 'EARTHLOCK', 'url': 'https://store.epicgames.com/en-US/p/earthlock-e7d979'}
-2023-11-17 06:30:26 | INFO    | epic_games.agent:claim_weekly_games:280 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/surviving-the-aftermath'}
-2023-11-17 06:30:32 | INFO    | epic_games.agent:claim_weekly_games:280 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/earthlock-e7d979'}
-2023-11-17 06:30:42 | INFO    | epic_games.agent:claim_weekly_games:312 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-11-17 06:30:45 | INFO    | epic_games.agent:claim_weekly_games:314 | claim_weekly_games - {'action': 'click payment button'}
-2023-11-17 06:30:50 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_largest_lion2309.onnx', 'prompt': 'Please click on each image containing the largest animal in real lіfe'}
-2023-11-17 06:31:02 | SUCCESS    | epic_games.agent:claim_weekly_games:325 | claim_weekly_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/cart/success'}
+2023-11-18 06:30:16 | INFO    | __main__:stash:140 | run - {'image': '20231105', 'version': '0.9.5.post1', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
+2023-11-18 06:30:22 | DEBUG    | __main__:create_tasks:65 | Put task - {'title': 'Surviving the Aftermath', 'url': 'https://store.epicgames.com/en-US/p/surviving-the-aftermath'}
+2023-11-18 06:30:22 | DEBUG    | __main__:create_tasks:65 | Put task - {'title': 'EARTHLOCK', 'url': 'https://store.epicgames.com/en-US/p/earthlock-e7d979'}
+2023-11-18 06:30:22 | SUCCESS    | __main__:prelude_with_context:84 | Pass claim task - {'reason': 'All free games are in my library', 'stage': 'context-prelude'}
