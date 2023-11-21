@@ -1,4 +1,4 @@
-2023-11-21 06:31:06 | INFO    | __main__:stash:140 | run - {'image': '20231105', 'version': '0.9.5.post1', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
-2023-11-21 06:31:12 | DEBUG    | __main__:create_tasks:65 | Put task - {'title': 'Surviving the Aftermath', 'url': 'https://store.epicgames.com/en-US/p/surviving-the-aftermath'}
-2023-11-21 06:31:12 | DEBUG    | __main__:create_tasks:65 | Put task - {'title': 'EARTHLOCK', 'url': 'https://store.epicgames.com/en-US/p/earthlock-e7d979'}
-2023-11-21 06:31:12 | SUCCESS    | __main__:prelude_with_context:84 | Pass claim task - {'reason': 'All free games are in my library', 'stage': 'context-prelude'}
+2023-11-22 06:31:00 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post1', 'role': 'EpicPlayer', 'headless': True}
+2023-11-22 06:31:08 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Surviving the Aftermath', 'url': 'https://store.epicgames.com/en-US/p/surviving-the-aftermath'}
+2023-11-22 06:31:08 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'EARTHLOCK', 'url': 'https://store.epicgames.com/en-US/p/earthlock-e7d979'}
+2023-11-22 06:31:08 | SUCCESS    | __main__:prelude_with_context:85 | Pass claim task - {'reason': 'All free games are in my library', 'stage': 'context-prelude'}
