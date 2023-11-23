@@ -1,4 +1,9 @@
-2023-11-23 06:29:41 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post1', 'role': 'EpicPlayer', 'headless': True}
-2023-11-23 06:29:47 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Surviving the Aftermath', 'url': 'https://store.epicgames.com/en-US/p/surviving-the-aftermath'}
-2023-11-23 06:29:47 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'EARTHLOCK', 'url': 'https://store.epicgames.com/en-US/p/earthlock-e7d979'}
-2023-11-23 06:29:47 | SUCCESS    | __main__:prelude_with_context:85 | Pass claim task - {'reason': 'All free games are in my library', 'stage': 'context-prelude'}
+2023-11-24 06:29:58 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post1', 'role': 'EpicPlayer', 'headless': True}
+2023-11-24 06:30:04 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Deliver Us Mars', 'url': 'https://store.epicgames.com/en-US/p/deliver-us-mars'}
+2023-11-24 06:30:09 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/deliver-us-mars'}
+2023-11-24 06:30:17 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-11-24 06:30:19 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2023-11-24 06:30:24 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click each image containing a mіcrοwаvе'}
+2023-11-24 06:30:25 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_model:251 | handle task - {'match_model': 'resnet', 'prompt': 'Please click each image containing a mіcrοwаvе'}
+2023-11-24 06:30:28 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2023-11-24 06:30:32 | SUCCESS    | epic_games.agent:claim_weekly_games:339 | claim_weekly_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/cart/success'}
