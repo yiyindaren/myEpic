@@ -1,27 +1,28 @@
-2023-12-10 06:29:30 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
-2023-12-10 06:29:38 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'GigaBash', 'url': 'https://store.epicgames.com/en-US/p/gigabash'}
-2023-12-10 06:29:38 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Predecessor', 'url': 'https://store.epicgames.com/en-US/p/predecessor'}
-2023-12-10 06:29:43 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/gigabash'}
-2023-12-10 06:29:47 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/predecessor'}
-2023-12-10 06:29:56 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-12-10 06:29:58 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2023-12-10 06:30:03 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Plеase click on somеthing tһat can be converted іnto furniture'}
-2023-12-10 06:30:04 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like please click on something that can be converted into furniture.', "This is a picture that don't look like please click on something that can be converted into furniture."], 'prompt': 'Plеase click on somеthing tһat can be converted іnto furniture', 'timit': '0.982s'}
-2023-12-10 06:30:16 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2023-12-10 06:30:48 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/gigabash'}
-2023-12-10 06:30:53 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/predecessor'}
-2023-12-10 06:31:02 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-12-10 06:31:05 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2023-12-10 06:31:10 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Pleаse click on ѕomething that саn be convеrted іnto furniture'}
-2023-12-10 06:31:11 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like please click on something that can be converted into furniture.', "This is a picture that don't look like please click on something that can be converted into furniture."], 'prompt': 'Pleаse click on ѕomething that саn be convеrted іnto furniture', 'timit': '0.779s'}
-2023-12-10 06:31:22 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2023-12-10 06:31:55 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/gigabash'}
-2023-12-10 06:32:00 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/predecessor'}
-2023-12-10 06:32:10 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-12-10 06:32:12 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2023-12-10 06:32:17 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please find and click on the letter W in the image below.'}
-2023-12-10 06:32:22 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2023-12-10 06:32:54 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3778), thread 'MainThread' (139884229049216): - {}
+2023-12-11 06:29:31 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
+2023-12-11 06:29:39 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'GigaBash', 'url': 'https://store.epicgames.com/en-US/p/gigabash'}
+2023-12-11 06:29:39 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Predecessor', 'url': 'https://store.epicgames.com/en-US/p/predecessor'}
+2023-12-11 06:29:44 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/gigabash'}
+2023-12-11 06:29:47 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/predecessor'}
+2023-12-11 06:29:57 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-12-11 06:29:59 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2023-12-11 06:30:04 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on something that can be converteԁ іnto furniture'}
+2023-12-11 06:30:05 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like please click on something that can be converted into furniture.', "This is a picture that don't look like please click on something that can be converted into furniture."], 'prompt': 'Please click on something that can be converteԁ іnto furniture', 'timit': '0.943s'}
+2023-12-11 06:30:17 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2023-12-11 06:30:49 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/gigabash'}
+2023-12-11 06:30:54 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/predecessor'}
+2023-12-11 06:31:03 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-12-11 06:31:06 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2023-12-11 06:31:11 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Ρlease click on something that can be converted into furniture'}
+2023-12-11 06:31:12 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like ρlease click on something that can be converted into furniture.', "This is a picture that don't look like ρlease click on something that can be converted into furniture."], 'prompt': 'Ρlease click on something that can be converted into furniture', 'timit': '0.749s'}
+2023-12-11 06:31:23 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2023-12-11 06:31:55 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/gigabash'}
+2023-12-11 06:32:00 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/predecessor'}
+2023-12-11 06:32:10 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-12-11 06:32:12 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2023-12-11 06:32:17 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Pleaѕe click on ѕomething that can be converted into furniture'}
+2023-12-11 06:32:18 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like please click on something that can be converted into furniture.', "This is a picture that don't look like please click on something that can be converted into furniture."], 'prompt': 'Pleaѕe click on ѕomething that can be converted into furniture', 'timit': '0.745s'}
+2023-12-11 06:32:34 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2023-12-11 06:33:06 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3697), thread 'MainThread' (140653346212736): - {}
 Traceback (most recent call last):
   File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 151, in stash
     await self.claim_epic_games(context)
