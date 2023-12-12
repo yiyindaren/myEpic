@@ -1,86 +1,11 @@
-2023-12-12 06:31:07 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
-2023-12-12 06:31:12 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'GigaBash', 'url': 'https://store.epicgames.com/en-US/p/gigabash'}
-2023-12-12 06:31:12 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Predecessor', 'url': 'https://store.epicgames.com/en-US/p/predecessor'}
-2023-12-12 06:31:16 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/gigabash'}
-2023-12-12 06:31:19 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/predecessor'}
-2023-12-12 06:31:28 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-12-12 06:31:30 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2023-12-12 06:31:35 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Ρleaѕe find anԁ click on the letter K in the image below.'}
-2023-12-12 06:31:40 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2023-12-12 06:32:13 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/gigabash'}
-2023-12-12 06:32:18 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/predecessor'}
-2023-12-12 06:32:27 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-12-12 06:32:29 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2023-12-12 06:32:34 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Pleaѕe click each image containing a rodent'}
-2023-12-12 06:32:35 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like rodent.', "This is a picture that don't look like rodent."], 'prompt': 'Pleaѕe click each image containing a rodent', 'timit': '0.973s'}
-2023-12-12 06:32:47 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2023-12-12 06:33:19 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/gigabash'}
-2023-12-12 06:33:24 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/predecessor'}
-2023-12-12 06:33:33 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-12-12 06:33:35 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2023-12-12 06:33:40 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click each image cοntaining a rodent'}
-2023-12-12 06:33:41 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like rodent.', "This is a picture that don't look like rodent."], 'prompt': 'Please click each image cοntaining a rodent', 'timit': '0.708s'}
-2023-12-12 06:33:53 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2023-12-12 06:34:25 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3635), thread 'MainThread' (140491442297728): - {}
-Traceback (most recent call last):
-  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 151, in stash
-    await self.claim_epic_games(context)
-  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 122, in claim_epic_games
-    await epic.claim_weekly_games(page, single_promotions)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/tenacity/_asyncio.py", line 88, in async_wrapped
-    return await fn(*args, **kwargs)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/tenacity/_asyncio.py", line 47, in __call__
-    do = self.iter(retry_state=retry_state)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/tenacity/__init__.py", line 325, in iter
-    raise retry_exc.reraise()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/tenacity/__init__.py", line 158, in reraise
-    raise self.last_attempt.result()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/concurrent/futures/_base.py", line 451, in result
-    return self.__get_result()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
-    raise self._exception
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/tenacity/_asyncio.py", line 50, in __call__
-    result = await fn(*args, **kwargs)
-  File "/home/runner/work/myEpic/myEpic/epic/src/epic_games/agent.py", line 338, in claim_weekly_games
-    await page.wait_for_url(recur_url)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 9417, in wait_for_url
-    await self._impl_obj.wait_for_url(
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_page.py", line 499, in wait_for_url
-    return await self._main_frame.wait_for_url(**locals_to_params(locals()))
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 227, in wait_for_url
-    async with self.expect_navigation(
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_event_context_manager.py", line 33, in __aexit__
-    await self._future
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 202, in continuation
-    event = await waiter.result()
-playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for navigation to "https://store.epicgames.com/en-US/cart/success" until 'load'
-============================================================
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 162, in <module>
-    asyncio.run(run())
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
-    self.run_forever()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
-    self._run_once()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
-    handle._run()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-> File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 158, in run
-    await agent.stash()
-  File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 139, in stash
-    async with async_playwright() as p:
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/async_api/_context_manager.py", line 58, in __aexit__
-    await self._connection.stop_async()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 288, in stop_async
-    self.cleanup()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 299, in cleanup
-    callback.future.set_exception(self._closed_error)
-asyncio.exceptions.InvalidStateError: invalid state
+2023-12-13 06:31:03 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
+2023-12-13 06:31:09 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'GigaBash', 'url': 'https://store.epicgames.com/en-US/p/gigabash'}
+2023-12-13 06:31:09 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Predecessor', 'url': 'https://store.epicgames.com/en-US/p/predecessor'}
+2023-12-13 06:31:15 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/gigabash'}
+2023-12-13 06:31:18 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/predecessor'}
+2023-12-13 06:31:28 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-12-13 06:31:30 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2023-12-13 06:31:35 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click eacһ image containing a frying pan'}
+2023-12-13 06:31:36 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like frying pan.', "This is a picture that don't look like frying pan."], 'prompt': 'Please click eacһ image containing a frying pan', 'timit': '0.923s'}
+2023-12-13 06:31:44 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2023-12-13 06:31:48 | SUCCESS    | epic_games.agent:claim_weekly_games:339 | claim_weekly_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/cart/success'}
