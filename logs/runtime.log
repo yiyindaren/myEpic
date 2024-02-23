@@ -1,10 +1,10 @@
-2024-02-23 06:29:46 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
-2024-02-23 06:29:52 | WARNING    | epic_games.agent:get_order_history:467 | Failed to get order history, cookie may have expired - {}
-2024-02-23 06:29:52 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Super Meat Boy Forever', 'url': 'https://store.epicgames.com/en-US/p/super-meat-boy-forever'}
-2024-02-23 06:29:57 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/super-meat-boy-forever'}
-2024-02-23 06:30:08 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2024-02-23 06:30:11 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2024-02-23 06:30:11 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0xc9 in position 2: invalid continuation byte - {}
+2024-02-24 06:29:14 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
+2024-02-24 06:29:22 | WARNING    | epic_games.agent:get_order_history:467 | Failed to get order history, cookie may have expired - {}
+2024-02-24 06:29:23 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Super Meat Boy Forever', 'url': 'https://store.epicgames.com/en-US/p/super-meat-boy-forever'}
+2024-02-24 06:29:27 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/super-meat-boy-forever'}
+2024-02-24 06:29:36 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2024-02-24 06:29:38 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2024-02-24 06:29:39 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte - {}
 Traceback (most recent call last):
   File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 162, in <module>
     asyncio.run(run())
@@ -26,10 +26,10 @@ Traceback (most recent call last):
     return json.loads(await self.text())
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 613, in text
     return content.decode()
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc9 in position 2: invalid continuation byte
-2024-02-23 06:30:45 | ERROR    | hcaptcha_challenger.agents.playwright.control:execute:615 | task interrupt <backcall> - {'reason': 'Failed to obtain challenge task'}
-2024-02-23 06:30:45 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2024-02-23 06:30:47 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0x9b in position 7: invalid start byte - {}
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte
+2024-02-24 06:30:13 | ERROR    | hcaptcha_challenger.agents.playwright.control:execute:615 | task interrupt <backcall> - {'reason': 'Failed to obtain challenge task'}
+2024-02-24 06:30:13 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2024-02-24 06:30:15 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0xf4 in position 1: invalid continuation byte - {}
 Traceback (most recent call last):
   File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 162, in <module>
     asyncio.run(run())
@@ -51,11 +51,11 @@ Traceback (most recent call last):
     return json.loads(await self.text())
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 613, in text
     return content.decode()
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0x9b in position 7: invalid start byte
-2024-02-23 06:31:17 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/super-meat-boy-forever'}
-2024-02-23 06:31:26 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2024-02-23 06:31:28 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2024-02-23 06:31:28 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0xaa in position 1: invalid start byte - {}
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf4 in position 1: invalid continuation byte
+2024-02-24 06:30:45 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/super-meat-boy-forever'}
+2024-02-24 06:30:53 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2024-02-24 06:30:59 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2024-02-24 06:30:59 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte - {}
 Traceback (most recent call last):
   File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 162, in <module>
     asyncio.run(run())
@@ -77,10 +77,10 @@ Traceback (most recent call last):
     return json.loads(await self.text())
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 613, in text
     return content.decode()
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 1: invalid start byte
-2024-02-23 06:32:02 | ERROR    | hcaptcha_challenger.agents.playwright.control:execute:615 | task interrupt <backcall> - {'reason': 'Failed to obtain challenge task'}
-2024-02-23 06:32:02 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2024-02-23 06:32:05 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0xc3 in position 1: invalid continuation byte - {}
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 0-1: invalid continuation byte
+2024-02-24 06:31:33 | ERROR    | hcaptcha_challenger.agents.playwright.control:execute:615 | task interrupt <backcall> - {'reason': 'Failed to obtain challenge task'}
+2024-02-24 06:31:33 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2024-02-24 06:31:36 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0xae in position 2: invalid start byte - {}
 Traceback (most recent call last):
   File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 162, in <module>
     asyncio.run(run())
@@ -102,11 +102,11 @@ Traceback (most recent call last):
     return json.loads(await self.text())
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 613, in text
     return content.decode()
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc3 in position 1: invalid continuation byte
-2024-02-23 06:32:35 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/super-meat-boy-forever'}
-2024-02-23 06:32:43 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2024-02-23 06:32:45 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2024-02-23 06:32:46 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0xf5 in position 0: invalid start byte - {}
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xae in position 2: invalid start byte
+2024-02-24 06:32:05 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/super-meat-boy-forever'}
+2024-02-24 06:32:14 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2024-02-24 06:32:16 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2024-02-24 06:32:17 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0xc8 in position 0: invalid continuation byte - {}
 Traceback (most recent call last):
   File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 162, in <module>
     asyncio.run(run())
@@ -128,10 +128,10 @@ Traceback (most recent call last):
     return json.loads(await self.text())
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 613, in text
     return content.decode()
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf5 in position 0: invalid start byte
-2024-02-23 06:33:20 | ERROR    | hcaptcha_challenger.agents.playwright.control:execute:615 | task interrupt <backcall> - {'reason': 'Failed to obtain challenge task'}
-2024-02-23 06:33:20 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2024-02-23 06:33:22 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0xa1 in position 0: invalid start byte - {}
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc8 in position 0: invalid continuation byte
+2024-02-24 06:32:51 | ERROR    | hcaptcha_challenger.agents.playwright.control:execute:615 | task interrupt <backcall> - {'reason': 'Failed to obtain challenge task'}
+2024-02-24 06:32:51 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2024-02-24 06:32:53 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0xde in position 1: invalid continuation byte - {}
 Traceback (most recent call last):
   File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 162, in <module>
     asyncio.run(run())
@@ -153,8 +153,8 @@ Traceback (most recent call last):
     return json.loads(await self.text())
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 613, in text
     return content.decode()
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa1 in position 0: invalid start byte
-2024-02-23 06:33:52 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3520), thread 'MainThread' (139905586150272): - {}
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xde in position 1: invalid continuation byte
+2024-02-24 06:33:23 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3538), thread 'MainThread' (139755601619840): - {}
 Traceback (most recent call last):
   File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 151, in stash
     await self.claim_epic_games(context)
