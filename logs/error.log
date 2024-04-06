@@ -1,4 +1,4 @@
-2024-04-06 06:30:18 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0xe6 in position 2: invalid continuation byte - {}
+2024-04-07 06:29:14 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0xb4 in position 1: invalid start byte - {}
 Traceback (most recent call last):
   File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 162, in <module>
     asyncio.run(run())
@@ -20,9 +20,9 @@ Traceback (most recent call last):
     return json.loads(await self.text())
   File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 607, in text
     return content.decode()
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0xe6 in position 2: invalid continuation byte
-2024-04-06 06:30:49 | ERROR    | hcaptcha_challenger.agents.playwright.control:execute:615 | task interrupt <backcall> - {'reason': 'Failed to obtain challenge task'}
-2024-04-06 06:31:25 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0xa2 in position 0: invalid start byte - {}
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb4 in position 1: invalid start byte
+2024-04-07 06:29:46 | ERROR    | hcaptcha_challenger.agents.playwright.control:execute:615 | task interrupt <backcall> - {'reason': 'Failed to obtain challenge task'}
+2024-04-07 06:30:21 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0xa7 in position 1: invalid start byte - {}
 Traceback (most recent call last):
   File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 162, in <module>
     asyncio.run(run())
@@ -44,9 +44,9 @@ Traceback (most recent call last):
     return json.loads(await self.text())
   File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 607, in text
     return content.decode()
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa2 in position 0: invalid start byte
-2024-04-06 06:31:57 | ERROR    | hcaptcha_challenger.agents.playwright.control:execute:615 | task interrupt <backcall> - {'reason': 'Failed to obtain challenge task'}
-2024-04-06 06:32:32 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0xb0 in position 0: invalid start byte - {}
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa7 in position 1: invalid start byte
+2024-04-07 06:30:53 | ERROR    | hcaptcha_challenger.agents.playwright.control:execute:615 | task interrupt <backcall> - {'reason': 'Failed to obtain challenge task'}
+2024-04-07 06:31:28 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte - {}
 Traceback (most recent call last):
   File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 162, in <module>
     asyncio.run(run())
@@ -68,9 +68,9 @@ Traceback (most recent call last):
     return json.loads(await self.text())
   File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 607, in text
     return content.decode()
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb0 in position 0: invalid start byte
-2024-04-06 06:33:04 | ERROR    | hcaptcha_challenger.agents.playwright.control:execute:615 | task interrupt <backcall> - {'reason': 'Failed to obtain challenge task'}
-2024-04-06 06:33:35 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3843), thread 'MainThread' (140507266980736): - {}
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
+2024-04-07 06:32:00 | ERROR    | hcaptcha_challenger.agents.playwright.control:execute:615 | task interrupt <backcall> - {'reason': 'Failed to obtain challenge task'}
+2024-04-07 06:32:31 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3856), thread 'MainThread' (140445279566720): - {}
 Traceback (most recent call last):
   File "/home/runner/work/myEpic/myEpic/epic/src/claim.py", line 162, in <module>
     asyncio.run(run())
